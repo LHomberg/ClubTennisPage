@@ -1,0 +1,118 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.login-box {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.title {
+    padding-top: 40px;
+    color: #c80815;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+.email-input {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+border-radius: 7px;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.password-input {
+        width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+border-radius: 7px;
+}
+
+
+.email-input:focus, .password-input:focus {
+    border: 2px solid #c80815 !important;
+    
+}
+
+.login-button {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    border: 0;
+    padding: 15px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 37%;
+    font-size: 16px;
+    border-radius:6px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    background-color: #c80815;
+}
+
+
+.login-button:hover {
+  background-color: #c80815c4;
+  transform: translateY(-2px);
+}
+
+.signup {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #8d3333;
+
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #ac3030;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+}
+
+.danger {
+    position: absolute;
+    top: 195;
+    left: 610;
+}

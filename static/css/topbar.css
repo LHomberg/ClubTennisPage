@@ -1,0 +1,91 @@
+
+.menu-area {
+    background: #992036;
+    overflow: hidden;
+    z-index:10;
+    position: relative;
+    
+  }
+  .menu-area ul {
+  list-style-type: none;
+   z-index:10;
+  }
+  
+  .menu ul {
+    display: flex;
+    z-index:10;
+    margin: 8;
+  }
+
+  .menu-area a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Merriweather";
+    z-index: 1;
+  
+  }
+
+  .logout {
+      margin-left: auto;
+  }
+  .menu-login {
+  margin-left: auto;
+  }
+
+  
+  .crest-logo {
+  top:12;
+  left: 25;
+  position: absolute;
+  z-index: 11;
+  
+  
+  }
+  
+  body {
+  margin: 0;
+  }
+  
+  .menu-area {
+  height: 67;
+  }
+  
+
+    /* Underline styles */
+a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+  }
+  
+  /* Fade in */
+  .menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 5;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  
+  
+  /* Scale from center */
+  .menu a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  .menu a:hover::after,
+  .menu a:focus::after{
+    opacity: 1;
+    transform: scale(1);
+  }

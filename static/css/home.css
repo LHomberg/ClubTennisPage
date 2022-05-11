@@ -1,0 +1,64 @@
+
+.redish-background img {
+  width: 100vw;
+  position: absolute;
+  top:0;
+  z-index:0;
+  
+  }
+  
+  
+  
+  .inner-body {
+  width:100%;
+  position: absolute;
+  display: grid;
+  
+  }
+  
+  .home-header {
+  margin: auto;
+  display: block;
+  font-size: 50px;
+  font-family: "Hahmlet";
+  color: #c80815;
+  
+  }
+  
+  
+  
+  .main-photo {
+  width:800px;
+  height:auto;
+  margin: auto;
+  display: block;
+  box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 48%);
+  
+  
+  }
+  
+  .interested {
+  margin: auto;
+  display: block;
+  font-family: "Merriweather";
+  }
+  
+  .tryouts {
+  margin: auto;
+  display: block;
+  }
+  
+  .tryouts {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #C80815, #FF2400);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
