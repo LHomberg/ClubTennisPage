@@ -1,0 +1,54 @@
+{% extends "topbar.html" %}
+
+{% block content %}
+<link rel= "stylesheet" type= "text/css" href= "static/css/email.css">
+<body>
+
+    <div class="body">
+        {% include "sidebar.html" %}
+        <div class="main">
+            <div class="email">
+                <form method="POST" action="/email" class="form" autocomplete="off" enctype = "multipart/form-data">
+                    
+                    <div class="container">
+                        <div class="receiver" name="receiver">
+                            <input class="input" type="email" name="receiver" placeholder="All" autofocus="" autocomplete="off">
+                            <label for="" class="label">All</label>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="cc" name="cc">
+                            <input class="input" type="email" name="cc" placeholder="cc" autofocus="" autocomplete="off">
+                            <label for="" class="label">CC</label>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="subject" name="subject">
+                            <input class="input" type="text" name="subject" placeholder="subject" autofocus="" autocomplete="off">
+                            <label for="" class="label">Subject</label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="body" name="body">
+                        <textarea name="body" cols="20" rows="100"></textarea>
+                    </div>
+
+                    <div class="attachment" name="attachment">
+                        <input type = "file" name = "file" />
+                    </div>
+
+                    <button class="send">Send</button>
+
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    {% include "bottombar.html" %}  
+</body>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'topbar.html' %}
+
+{% block content %}
+<link rel= "stylesheet" type= "text/css" href= "static/css/login.css">
+<div class="login-box">
+   
+    <div class="box">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="danger">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+        <form method="POST" action="/login">
+            <h3 class="title" align="center">Login</h3>
+            <div class="container">
+                <div class="email">
+                    <input class="email-input" type="email" name="email" placeholder="Email" autofocus="">
+                  
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="password">
+                    <input class="password-input" type="password" name="password" placeholder="Password">
+                    
+                </div>
+            </div>
+            <br>
+            <button class="login-button" align="center">Login</button>
+            <br>
+            <br>
+            <p class="signup" align="center"><a href="{{ url_for('auth.signup') }}">Sign Up</p>
+        </form>
+    </div>
+    
+</div>
+{% include 'bottombar.html' %}
+{% endblock %}

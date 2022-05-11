@@ -1,0 +1,114 @@
+{% extends "topbar.html" %}
+
+{% block content %}
+<link rel= "stylesheet" type= "text/css" href= "static/css/signup.css">
+<div class="signupform">
+    
+    <div class="box">
+        
+        
+        <form method="POST" action="/signup" class="form" autocomplete="off">
+
+            <div class="container1"> 
+                <h3 class="title">Sign Up</h3>
+                <div class="container">
+                    <div class="email">
+                        <input class="input" type="email" name="email" placeholder="Email" autofocus="" autocomplete="off">
+                        <label for="" class="label">Email</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="name">
+                        <input class="input" type="text" name="name" placeholder="Name" autofocus="">
+                        <label for="" class="label">Name</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="address">
+                        <input class="input" type="text" name="address" placeholder="Street Address" autofocus="">
+                        <label for="" class="label">Address</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="phone">
+                        <input class="input" type="tel" name="phone" placeholder="Phone Number" autofocus="">
+                        <label for="" class="label">Phone Number</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="grade">
+                        
+                        <select id="grade" name="grade" class="input">
+                            <option value="" disabled selected hidden class="hidden">What year are you?</option>
+                            <option value="Freshman">Freshman</option>
+                            <option value="Sophomore">Sophomore</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Senior">Senior</option>
+                            <option value="Graduate">Graduate</option>
+                            <option value="Faculty">Faculty</option>
+                        </select>
+                        <label for="grade" class="label">Year</label>
+                    </div>
+                </div>
+            </div>
+            <div class=container2>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <div class="danger">
+                            {{ messages[0] }}<br> Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+                        </div>
+                     {% endif %}
+                 {% endwith %}
+            
+                <div class="container">
+                    <div class="age">
+                        
+                        <input class="input" type="date" name="age" autofocus="" required>
+                        <label for="" class="label">Date of Birth</label>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="team">
+                        
+                        <select class="input" name="team">
+                            <option value="" disabled selected hidden class="hidden">Which team are you on?</option>
+                            <option value="Red">Red</option>
+                            <option value="White">White</option>
+                        </select>
+                        <label for="team" class="label">Team</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="car">
+                        
+                        <select class="input" name="car">
+                            <option value="" disabled selected hidden class="hidden">Do you have a car?</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                            <option value="Maybe">Maybe</option>
+                        </select>
+                        <label for="car" class="label">Car</label>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="password">
+                        <input class="input" type="password" name="password" placeholder="Password" autocomplete="off">
+                        <label for="" class="label">Password</label>
+                    </div>
+                </div>
+
+                <button class="signup">Sign Up</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+{% include "bottombar.html" %}
+{% endblock %}

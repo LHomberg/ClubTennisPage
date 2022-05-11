@@ -1,0 +1,39 @@
+{% extends "topbar.html" %}
+
+
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Hahmlet">
+<link rel= "stylesheet" type= "text/css" href= "static/css/home.css">
+<body>
+    <div class="body">
+        <div class="redish-background">
+            <img src="static/images/redish-background.png">
+        </div>
+        <div class="inner-body">
+            <br>
+            <div class=home-header>
+                Wisconsin Club Tennis       
+            </div>
+            <br>
+            <br>
+            <div>
+                <img class="main-photo" src="static/images/BadgerClassicA.JPG">
+            </div>
+            <div class="interested"> 
+                <br>
+                <h1>Interested in Club Tennis?</h1>
+                <button class="tryouts">Sign Up For Tryouts</button>
+                <br>
+                <br>     
+            </div>
+            <br>
+            <br>
+            <br>
+            {% include 'bottombar.html' %}
+        </div>
+    </div>
+    
+</body>
+{% endblock %}

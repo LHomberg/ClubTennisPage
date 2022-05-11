@@ -1,0 +1,48 @@
+{% extends "topbar.html" %}
+
+{% block content %}
+
+<body>
+
+    <div class="body">
+        {% include "sidebar.html" %}
+        <div class="main">
+            <table id="data" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Grade</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for user in users %}
+                  
+                  
+                    <tr>
+                    
+                      <td><a href="{{ user.name }}"></a>{{ user.name }}</td>
+                      <td>{{ user.grade }}</td>
+                      <td>{{ user.address }}</td>
+                      <td>{{ user.phone }}</td>
+                      <td>{{ user.email }}</td>
+                    </tr>
+
+               
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+        
+    </div>
+    
+    {% include "bottombar.html" %}  
+</body>
+
+
+
+{% endblock %}
+
+

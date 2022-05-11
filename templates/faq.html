@@ -1,0 +1,78 @@
+{% extends 'topbar.html' %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather">
+<link rel= "stylesheet" type= "text/css" href= "static/css/faq.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML CSS FAQ Design | Webdevtrick.com</title>
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+   
+  <div class="container">
+   
+    <h2>Frequently Asked Questions</h2>
+   
+    <div class="accordion">
+      <div class="accordion-item">
+        <a>Tryouts</a>
+        <div class="content">
+            <h3>When are tryouts?</h3>
+            <p>Tryouts are usually within the first two weeks of each semester. Check @badgerclubtennis on instagram for more details on dates and time.</p>
+            <h3>Where are tryouts?</h3>
+            <p>In the first semester, tryouts are usually located at the Dejope tennis courts. During the second semester they are usually located at Nielsen Tennis Stadium.</p>
+            <h3>What is the format of tryouts?</h3>
+            <p>Due to the large turnout, tryouts are usually in the format of half-court groundstroke games. Towards the end, doubles groundstroke games are played.</p>
+            <h3>How many people are taken during tryouts?</h3>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <a>Team</a>
+        <div class="content">
+          <h3>What is the difference between the red team and the white team?</h3>
+          <h3>How often do the teams practice?</h3>
+          <h3>How much are dues?</h3>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <a>Travel</a>
+        <div class="content">
+            <h3>How often does the team travel?</h3>
+            <h3>What costs are covered during travel?</h3>
+            <h3>Is traveling required?</h3>
+            <h3>How many people go on each trip?</h3>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <a>Badger Classic</a>
+        <div class="content">
+            <h3>When is the badger classic?</h3>
+            <h3>How many teams are invited?</h3>
+            <h3>Is there a player party?</h3>
+            <h3>How much does it cost to enter a team?</h3>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <a>Eligibility</a>
+        <div class="content">
+            <h3>Can graduate students join the team?</h3>
+            <h3>Can faculty or staff join the team?</h3>
+            <h3>Former NCAA Eligibility</h3>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+   
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script  src="static/js/faq.js"></script>
+
+
+{% include 'bottombar.html' %}
+
+<link rel= "stylesheet" type= "text/css" href= "static/css/faq.css">  
+
+{% endblock %}

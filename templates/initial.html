@@ -1,0 +1,20 @@
+{% extends "topbar.html" %}
+
+{% block content %}
+<body>
+    <link rel= "stylesheet" type= "text/css" href= "static/css/initial.css">
+
+    <div class="body">
+        {% include "sidebar.html" %}
+        <div class="main">
+            <h1 class="title">
+                Welcome, {{name}}!
+                {{ table | safe }}
+        </div>
+        
+    </div>
+    
+    {% include "bottombar.html" %}  
+</body>
+
+{% endblock %}
