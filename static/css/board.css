@@ -4,13 +4,22 @@
     overflow: hidden;
     border-radius: 100%;
     margin: 20px auto 20px;
-    border-left: 4px solid #ddd;
-    border-right: 4px solid #ddd;
+    border-left: 4px solid #c80815;
+    border-right: 4px solid #c80815;
     border-top: 4px solid #c80815;
     border-bottom: 4px solid #c80815;
     transform: rotate(-0deg);
     transition: 0.5s;
 }
+
+
+h2 {
+    padding-top: 10px;
+    color: #c80815;
+    font-size: 36px;
+    font-family: "Gotham",Helvetica,Arial,sans-serif;
+}
+/**
 .card-box:hover .user-pic {
     transform: rotate(0deg);
     transform: scale(1.1);
@@ -19,7 +28,7 @@
     border-right: 4px solid #c80815;
     border-left: 4px solid #c80815;
 }
-
+**/
 .card-box {
     padding: 15px;
     background-color: #fdfdfd;

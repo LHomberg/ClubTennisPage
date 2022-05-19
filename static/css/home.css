@@ -1,53 +1,73 @@
 
-.redish-background img {
-  width: 100vw;
-  position: absolute;
-  top:0;
-  z-index:0;
-  
-  }
-  
-  
-  
   .inner-body {
   width:100%;
   position: absolute;
   display: grid;
   
   }
-  
-  .home-header {
-  margin: auto;
-  display: block;
-  font-size: 50px;
-  font-family: "Hahmlet";
+
+  #stage img {
+    position: absolute;
+    padding: 0;
+    width: 100vw;
+    height: 50vw;
+    object-fit: cover;
+
+}
+
+#stage img:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 7s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+
+#stage img:nth-of-type(n+3) {
+    display: none;
+}
+
+@keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+}
+
+
+.title {
+  z-index: 100; 
+  margin-left: auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+  font-size: 46px;
+  color: white;
+  font-family: "Gotham",Helvetica,Arial,sans-serif;
+
+}
+.interested {
+
+  position: relative;
+  bottom: -850;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+  font-size: 20px;
   color: #c80815;
-  
-  }
-  
-  
-  
-  .main-photo {
-  width:800px;
-  height:auto;
-  margin: auto;
-  display: block;
-  box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 48%);
-  
-  
-  }
-  
-  .interested {
-  margin: auto;
-  display: block;
-  font-family: "Merriweather";
-  }
-  
-  .tryouts {
-  margin: auto;
-  display: block;
-  }
-  
+  font-family: "Gotham",Helvetica,Arial,sans-serif;
+  text-align: center;
+}
+
+.interested h2 {
+  font-size: 22;
+}
+
+
+.tryouts {
+margin: auto;
+display: block;
+}
+
   .tryouts {
     cursor: pointer;
     border-radius: 5em;
@@ -62,3 +82,35 @@
     font-size: 13px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   }
+
+  div .bottom-bar {
+    position: absolute;
+    bottom: -783;
+    display: flex;
+    width: 100%;
+    height: 42.45;
+    background: #992036;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.facebook-photo {
+    margin-left:5;
+}
+
+.copyright-bar {
+    position: absolute;
+    bottom: -800;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: white;
+    font-size: 18px;
+    background: #992036;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-bar small{
+    font-size: 14.4;
+}
